@@ -5,11 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Comarch on 2016-09-29.
- */
 public class CalculatorTest {
-    Calculator calc;
+
+    private Calculator calc;
 
     @Before
     public void initialize(){
@@ -24,19 +22,19 @@ public class CalculatorTest {
     @Test
     public void subtract() throws Exception {
         int result = calc.subtract(2,2);
-        assertTrue("subtract result: " + result, result == 3);
+        assertTrue("subtract result: " + result, result == 0);
     }
 
     @Test
     public void multiply() throws Exception {
         int result = calc.multiply(1,2);
-        assertTrue("add result: " + result, result == 3);
+        assertTrue("multiply result: " + result, result == 2);
     }
 
     @Test
     public void divide() throws Exception {
-        int result = calc.divide(1,2);
-        assertTrue("add result: " + result, result == 3);
+        int result = calc.divide(2,2);
+        assertTrue("add divide: " + result, result == 1);
     }
 
 }
